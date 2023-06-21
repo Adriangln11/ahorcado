@@ -125,7 +125,7 @@ def main():
     PORT = 8000
 
     with socketserver.TCPServer(("", PORT), MyRequestHandler) as httpd:
-        print("Servidor en ejecución en el puerto", PORT)
+        print("Server listening on port: ", PORT)
         httpd.serve_forever()
 
 if __name__ == "__main__":
